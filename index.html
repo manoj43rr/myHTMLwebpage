@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "Author" content = "Manoj R R">
+        <meta name = "What is this page for?" content = "This page contains all the data that i learnt about HTML and i am experimenting them">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY HTML SITE</title>
+    </head>
+    <body>
+        <h1>Hello Reader</h1>
+        <p>This page contains all the topics related to HTML-BASICS</p>
+        <hr>
+        <dl>
+            <dt><h3>html Tag</h3></dt>
+            <dd>
+                <p>The <i>"html"</i> tag is the basic tag for webpage the html tag determines the start of the webpage. The <i>"html"</i> tag has two major
+                    sections they are :
+                </p>
+                <ol>
+                    <li>Head Section</li>
+                    <li>Body Section</li>
+                </ol>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt><h4>Head Section</h4></dt>
+            <dd>
+                <p>The <i>"Head"</i> section is represented by <i>Head Tag</i>. The head tag contains that are not seen on the webpage
+                but are essential for the webpage's details.
+                </p>
+                <p>Some of the important tags that are actually used within the <i>"head tag"</i>.</p>
+                <ul>
+                    <ul>
+                        <li><i>"title tag"</i></li>
+                        <p>Within the title tag we feed the title of the webpage. </p>
+                        <p>You can change the title of this webpage by entering the name you want</p>
+                        <label>Your Title</label>
+                        <input type= "text" id = "UserTitle">
+                        <button onclick="changeTitle()"> click here to change title of webpage</button>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><i>"meta tag"</i></li>
+                        <p>The <meta> tag in HTML is used to provide metadata about the HTML document. Metadata is data that describes other 
+                        data, and in this context, it provides information about the web page, such as its character set, author, description, 
+                        keywords, viewport settings, and more. The <meta> tag is placed within the <head> section of an HTML document.
+                        </p>
+                    </ul>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt><h4>Body Section</h4></dt>
+            <dd>
+                <p>The <i>"Body"</i> section contains the data ie., displayed on the webpage. The body tag contains all the elements that the
+                user needs to display whether it could be images, video or audio etc. Everything you are seeing on this webpage is written within
+                <i>"Body tag"</i>. 
+                </p>
+            </dd>
+        </dl>
+        <hr>
+
+        <h3>Let's learn some of the important tags that we regularly use.</h3>
+        <dl>
+            <dt><h4>Hyperlinks</h4></dt>
+            <dd>
+                <p>The hyperlinks are the tags that are used to link other webpages to the current webpage. By clicking on the hyperlink
+                    it is possible to load the specified webpage in the current tab or open it in a new tab.</p>
+                <p>By clicking on the below hyperlink you are able to load the wikipedia webpage in this tab.</p>
+                <a href = "https://en.wikipedia.org/wiki/Hyperlink" title = "Clicking this takes you hyperlink's Wiki">Hyperlinks</a>
+                <br>
+                <p>By clicking on the below hyperlink you are able to load the wikipedia webpage in a new tab.</p>
+                <a href = "https://en.wikipedia.org/wiki/Hyperlink" title = "Clicking this takes you hyperlink's Wiki" target = "_blank">
+                    Hyperlinks
+                </a>
+            </dd>
+        </dl>
+        <hr>
+        <dl>
+            <dt><h4>Img Tag</h4></dt>
+            <dd>
+                <p>The <i>img tag</i> or commonly known as <i>image tag</i> is used to display the images on the webpage.</p>
+                <img src = "images.jpg" id = "img1"><br>
+                <label>Select your image</label><br>
+                <input type = "file" id = "ImageFile">
+                <button onclick="ChangeImage()">Change image</button>
+                <br>
+
+                <p>We can also make the image refer a hyperlink by surrounding the <i>img tag</i> with <i>a tag</i> The image of Royal Challengers 
+                Bengaluru on clicked loads up the website of RCB</p>
+                <a href = "https://www.royalchallengers.com/">
+                    <img src = "image2.avif" height="100">
+                </a>
+            </dd>
+        </dl>
+        <hr>
+        <dl>
+            <dt><h4>Audio Tag</h4></dt>
+            <dd>
+                <p>The <i>audio tag</i> is used to load the audio data on to the webpage. we have few attributes that makes the audio data to be 
+                handled by the user.</p>
+                <audio src = "sapta sagara.mp3" controls ></audio>
+                <p>here are few of the attributes of the <i>audio tag</i> :</p>
+                <ul>
+                    <li>Controls : This attribute is a boolean attribute that is able to provide the controls that are required for user. Some of the controls are Play/Pause, mute/unmute, the line displaying the stage of audio.</li>
+                    <li>autoplay : This attribute is also a boolean attribute that plays the audio data automatically when the webpage is loaded. It can be paused by the user.</li>
+                    <li>loop : This is also a boolean attribute that is able to repeatedly play the audio data when the audio data is finished.</li>
+                    <li>muted : This is also a boolean attribute that is used to mute the audio data initially but this can be unmuted by the user.</li>
+                </ul>
+            </dd>
+        </dl>
+        <hr>
+        <dl>
+            <dt><h4>Video Tag</h4></dt>
+            <dd>
+                <p>The <i>video tag</i> is used to load the video data on to the webpage.</p>
+                <video src = "video  (2).mp4" height="200" controls></video>
+                <p>here are few of the attributes of the <i>video tag</i> :</p>
+                <ul>
+                    <li>Controls : This attribute is a boolean attribute that is able to provide the controls that are required for user. Some of the controls are Play/Pause, mute/unmute, the line displaying the stage of video.</li>
+                    <li>autoplay : This attribute is also a boolean attribute that plays the video data automatically when the webpage is loaded. It can be paused by the user.</li>
+                    <li>loop : This is also a boolean attribute that is able to repeatedly play the video data when the audio data is finished.</li>
+                    <li>muted : This is also a boolean attribute that is used to mute the video data initially but this can be unmuted by the user.</li>
+                </ul>
+            </dd>
+        </dl>
+        <hr>
+        <dl>
+            <dt><h4>Text Formatting</h4></dt>
+            <dd>
+                <p>There are many text formatting tags that includes the size and appearance of the text</p>
+                <ul>
+                    <p>The below examples represent the formatting text by size</p>
+                    <li><h1>This is displayed using <i>h1 tag</i>.</h1></li>
+                    <li><h2>This is displayed using <i>h2 tag</i>.</h2></li>
+                    <li><h3>This is displayed using <i>h3 tag</i>.</h3></li>
+                    <li><h4>This is displayed using <i>h4 tag</i>.</h4></li>
+                    <li><h5>This is displayed using <i>h5 tag</i>.</h5></li>
+                    <li><h6>This is displayed using <i>h6 tag</i>.</h6></li>
+                </ul>
+                <hr>
+                <ul>
+                    <p>The below examples represent the formatting text by size</p>
+                    <li><p>This is displayed using paragraph tag</p></li>
+                    <li><b>This is displayed using bold tag</b></li>
+                    <li><i>This is displayed using italic tag</i></li>
+                    <li><p>This is a <big>big</big> tag</p></li>
+                    <li><p>This is a <small>small</small> tag</p></li>
+                    <li><p>This is a <sub>Sub</sub> text</p></li>
+                    <li><p>This is a <sup>Sup</sup> text</p></li>
+                    <li><p>This is a <ins>underlined</ins> text</p></li>
+                    <li><p>This is a <del>Deleted</del> text</p></li>
+                    <li><p>This is a <mark>Marked</mark> text</p></li>
+                </ul>
+            </dd>
+        </dl>
+        <hr>
+        <dl>
+            <dt><h4>Table Tag</h4></dt>
+            <dd>
+                <table style="background-color: black;">
+                    <tr style="background-color: gray; color:white;" align="center" width = "700">
+                        <th width = "100">Sunday</th>
+                        <th width = "100">Monday</th>
+                        <th width = "100">Tuesday</th>
+                        <th width = "100">Wednesday</th>
+                        <th width = "100">Thursday</th>
+                        <th width = "100">Friday</th>
+                        <th width = "100">Saturday</th>
+                    </tr>
+                    <tr style="background-color: gray; color: white;" align="center">
+                        <td>Closed</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>9-5</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </dd>
+        </dl>
+
+
+
+        <script>
+            function changeTitle(){
+                var x = document.getElementById("UserTitle").value;
+                document.title = x;
+            }
+
+            function ChangeImage(){
+                var inputfile = document.getElementById("ImageFile");
+                var file = inputfile.files[0];
+
+                if(file){
+                    var ImgURL = URL.createObjectURL(file);
+                    var imgElement = document.getElementById("img1");
+                    imgElement.src = ImgURL;
+                }else{
+                    alert("Image not selected");
+                }
+            }
+        </script>
+    </body>
+</html>
